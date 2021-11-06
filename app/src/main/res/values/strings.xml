@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">andsoon</string>
+    <string name="name">Andsoon</string>
+    <string name="bio">" Додаток для аналізу харчування. Користувачі можуть просто ввести список інгредієнтів і отримати повний аналіз їх поживності (вміст макро і мікроелементів, вітамінів і т.д.). Джерело Даних: Edamam"</string>
 </resources>
