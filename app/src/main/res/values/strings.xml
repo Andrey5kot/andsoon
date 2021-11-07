@@ -2,4 +2,21 @@
     <string name="app_name">andsoon</string>
     <string name="name">Andsoon</string>
     <string name="bio">" Додаток для аналізу харчування. Користувачі можуть просто ввести список інгредієнтів і отримати повний аналіз їх поживності (вміст макро і мікроелементів, вітамінів і т.д.). Джерело Даних: Edamam"</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="productName">Andsoon Food</string>
+    <string name="SignIn">Sign In</string>
+    <string name="textString">Hello!</string>
+    <string name="EmailValue">Email</string>
+    <string name="Password_string">Password</string>
+    <string name="email_hint">someemail@example.com</string>
+    <string name="password_hint">***************</string>
+    <string name="google_label_text">or use one of your google profile</string>
 </resources>

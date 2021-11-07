@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/project/andsoon/app/src/main/res/layout/activity_main.xml" value="0.4742468415937804" />
+        <entry key="..\:/project/andsoon/app/src/main/res/layout/activity_sign_in.xml" value="0.4" />
+        <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_login.xml" value="0.4" />
       </map>
     </option>
   </component>
