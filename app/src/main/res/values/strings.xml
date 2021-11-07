@@ -18,5 +18,8 @@
     <string name="Password_string">Password</string>
     <string name="email_hint">someemail@example.com</string>
     <string name="password_hint">***************</string>
-    <string name="google_label_text">or use one of your google profile</string>
+    <string name="google_label_text">or use one of your google profiles</string>
+    <string name="forgot_label_text">Forgot Password?</string>
+    <string name="SignUpString">Sign Up</string>
+    <string name="SignUp">Sign Up</string>
 </resources>
