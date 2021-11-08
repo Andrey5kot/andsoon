@@ -22,4 +22,6 @@
     <string name="forgot_label_text">Forgot Password?</string>
     <string name="SignUpString">Sign Up</string>
     <string name="SignUp">Sign Up</string>
+    <string name="Have_acc">Have an account?</string>
+
 </resources>
