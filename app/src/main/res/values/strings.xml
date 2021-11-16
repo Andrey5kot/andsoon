@@ -23,5 +23,7 @@
     <string name="SignUpString">Sign Up</string>
     <string name="SignUp">Sign Up</string>
     <string name="Have_acc">Have an account?</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
