@@ -20,7 +20,9 @@ class SignInFragment : Fragment() {
         binding.signUpTextbutton.setOnClickListener{view:View->
             view.findNavController().navigate(R.id.signUpFragment)
         }
-
+        binding.signInButton.setOnClickListener{view:View->
+            view.findNavController().navigate(R.id.mainPageFragment)
+        }
         // Inflate the layout for this fragment
         return binding.root
 

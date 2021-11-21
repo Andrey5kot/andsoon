@@ -11,6 +11,19 @@
         <item name="android:textSize">26sp</item>
         <item name="android:fontFamily">@font/quicksand_bold</item>
     </style>
+    <style name="TitleStyle">
+
+        <item name="android:textAlignment">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#35424a</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+    </style>
+    <style name="MainTextStyle">
+        <item name="android:textColor">#989eb1</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:fontFamily">@font/quicksand_bold</item>
+    </style>
     <style name="SignTextStyle">
 
         <item name="android:textAlignment">center</item>

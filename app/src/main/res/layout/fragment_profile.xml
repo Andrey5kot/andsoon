@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainpages.buttonNavPages.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafffa">
+
+        <TextView
+            android:id="@+id/AgeTitleTextView"
+            style="@style/MainTextStyle"
+            android:layout_width="70dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/age_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <EditText
+            android:id="@+id/ageEditText"
+            android:layout_width="304dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="@string/age_hint"
+            android:inputType="number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AgeTitleTextView" />
+
+        <TextView
+            android:id="@+id/heightTitleTextView"
+            style="@style/MainTextStyle"
+            android:layout_width="74dp"
+            android:layout_height="38dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/height_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ageEditText" />
+
+        <EditText
+            android:id="@+id/heightEditText"
+            android:layout_width="304dp"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:hint="@string/height_title"
+            android:inputType="numberSigned"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heightTitleTextView" />
+
+        <TextView
+            android:id="@+id/weightTitleTextView"
+            style="@style/MainTextStyle"
+            android:layout_width="76dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/weight_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heightEditText" />
+
+        <EditText
+            android:id="@+id/weightEditText"
+            android:layout_width="304dp"
+            android:layout_height="53dp"
+            android:ems="10"
+            android:hint="@string/weight_title"
+            android:inputType="numberSigned"
+            android:minHeight="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weightTitleTextView"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/profileTitleTextView"
+            style="@style/TitleStyle"
+            android:layout_width="106dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/profile_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/sexTitleTextView"
+            style="@style/MainTextStyle"
+            android:layout_width="69dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/gender_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.153"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profileTitleTextView" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="304dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sexTitleTextView">
+
+            <RadioButton
+                android:id="@+id/checkMale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/male_title"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/checkFemale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/female_title"
+                tools:ignore="TouchTargetSizeCheck" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            style="@style/SignButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/save_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.164"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weightEditText"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
