@@ -10,7 +10,7 @@ import com.kot.andsoon.R
 import com.kot.andsoon.databinding.FragmentProfileBinding
 
 
-class ProfileFragment : Fragment() {
+class NavProfileFragment : Fragment() {
     private lateinit var binding: FragmentProfileBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

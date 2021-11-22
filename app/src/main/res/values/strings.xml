@@ -37,5 +37,9 @@
     <string name="height_title">Height</string>
     <string name="weight_title">Weight</string>
     <string name="save_button">Save</string>
-
+    <string name="next_button">Next</string>
+    <string name="skip_value">"skip "</string>
+    <string name="title_text">Title Text</string>
+    <string name="dest_text">Description Text</string>
+    <string name="analyze_button">Analyze!</string>
 </resources>

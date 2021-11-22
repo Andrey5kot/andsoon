@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/mainSignFragment">
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.kot.andsoon.loginpages.MainFragment"
+        android:id="@+id/mainSignFragment"
+        android:name="com.kot.andsoon.loginpages.MainSignFragment"
         android:label="fragment_main"
-        tools:layout="@layout/fragment_main" >
+        tools:layout="@layout/fragment_main_sign" >
         <action
             android:id="@+id/action_mainFragment_to_signInFragment"
             app:destination="@id/signInFragment" />
@@ -38,10 +38,10 @@
             app:destination="@id/signInFragment" />
     </fragment>
     <fragment
-        android:id="@+id/mainPageFragment"
-        android:name="com.kot.andsoon.mainpages.MainPageFragment"
+        android:id="@+id/navPageFragment"
+        android:name="com.kot.andsoon.mainpages.buttonNavPages.NavMenuFragment"
         android:label="fragment_main_page"
-        tools:layout="@layout/fragment_main_page" >
+        tools:layout="@layout/fragment_nav_page" >
         <action
             android:id="@+id/action_mainPageFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
@@ -54,17 +54,26 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.kot.andsoon.mainpages.buttonNavPages.HomeFragment"
+        android:name="com.kot.andsoon.mainpages.buttonNavPages.NavHomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.kot.andsoon.mainpages.buttonNavPages.ProfileFragment"
+        android:name="com.kot.andsoon.mainpages.buttonNavPages.NavProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/statisticsFragment"
-        android:name="com.kot.andsoon.mainpages.buttonNavPages.StatisticsFragment"
+        android:name="com.kot.andsoon.mainpages.buttonNavPages.NavStatisticsFragment"
         android:label="fragment_statistics"
         tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/mainPageFragment"
+        android:name="com.kot.andsoon.mainpages.mainpage.MainPageFragment"
+        android:label="fragment_main_page"
+        tools:layout="@layout/fragment_main_page" >
+        <action
+            android:id="@+id/action_mainPageFragment_to_navPageFragment"
+            app:destination="@id/navPageFragment" />
+    </fragment>
 </navigation>

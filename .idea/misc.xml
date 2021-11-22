@@ -8,6 +8,8 @@
         <entry key="..\:/project/andsoon/app/src/main/res/drawable-xxxhdpi/ic_dashboard_black_24dp.xml" value="0.1" />
         <entry key="..\:/project/andsoon/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.190625" />
         <entry key="..\:/project/andsoon/app/src/main/res/drawable/ic_launcher_background.xml" value="0.26666666666666666" />
+        <entry key="..\:/project/andsoon/app/src/main/res/drawable/indicator_active.xml" value="0.1388888888888889" />
+        <entry key="..\:/project/andsoon/app/src/main/res/drawable/indicator_inactive.xml" value="0.1388888888888889" />
         <entry key="..\:/project/andsoon/app/src/main/res/drawable/outline_close_24.xml" value="0.26666666666666666" />
         <entry key="..\:/project/andsoon/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/project/andsoon/app/src/main/res/layout/activity_main_page.xml" value="0.25416666666666665" />
@@ -17,13 +19,15 @@
         <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_login.xml" value="0.4" />
         <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_main.xml" value="0.24010416666666667" />
-        <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_main_page.xml" value="0.264" />
+        <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_main_page.xml" value="0.31791530944625407" />
+        <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_main_sign.xml" value="0.25416666666666665" />
         <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_notifications.xml" value="0.25416666666666665" />
         <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_profile.xml" value="0.328125" />
         <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_sign_in.xml" value="0.264" />
         <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_sign_up.xml" value="0.264" />
         <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_statistics.xml" value="0.25416666666666665" />
         <entry key="..\:/project/andsoon/app/src/main/res/layout/fragment_title.xml" value="0.25416666666666665" />
+        <entry key="..\:/project/andsoon/app/src/main/res/layout/slide_container.xml" value="0.25" />
         <entry key="..\:/project/andsoon/app/src/main/res/menu/bottom_nav_menu.xml" value="0.4" />
       </map>
     </option>

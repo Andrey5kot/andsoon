@@ -10,7 +10,7 @@ import com.kot.andsoon.R
 import com.kot.andsoon.databinding.FragmentHomeBinding
 
 
-class HomeFragment : Fragment() {
+class NavHomeFragment : Fragment() {
     private lateinit var binding: FragmentHomeBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

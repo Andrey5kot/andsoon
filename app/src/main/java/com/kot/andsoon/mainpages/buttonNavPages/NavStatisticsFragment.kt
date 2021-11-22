@@ -10,7 +10,7 @@ import com.kot.andsoon.R
 import com.kot.andsoon.databinding.FragmentStatisticsBinding
 
 
-class StatisticsFragment : Fragment() {
+class NavStatisticsFragment : Fragment() {
     private lateinit var binding: FragmentStatisticsBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

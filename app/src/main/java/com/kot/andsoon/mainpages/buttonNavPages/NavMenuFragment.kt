@@ -1,4 +1,4 @@
-package com.kot.andsoon.mainpages
+package com.kot.andsoon.mainpages.buttonNavPages
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,25 +6,23 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import androidx.navigation.findNavController
 import com.kot.andsoon.R
-import com.kot.andsoon.databinding.FragmentMainPageBinding
-import com.kot.andsoon.mainpages.buttonNavPages.HomeFragment
-import com.kot.andsoon.mainpages.buttonNavPages.ProfileFragment
-import com.kot.andsoon.mainpages.buttonNavPages.StatisticsFragment
-import kotlin.concurrent.fixedRateTimer
+import com.kot.andsoon.databinding.FragmentNavPageBinding
+import com.kot.andsoon.mainpages.buttonNavPages.NavHomeFragment
+import com.kot.andsoon.mainpages.buttonNavPages.NavProfileFragment
+import com.kot.andsoon.mainpages.buttonNavPages.NavStatisticsFragment
 
-class MainPageFragment : Fragment() {
-    private lateinit var binding: FragmentMainPageBinding
-    private val homeFragment= HomeFragment()
-    private val profileFragment= ProfileFragment()
-    private val statisticsFragment= StatisticsFragment()
+class NavMenuFragment : Fragment() {
+    private lateinit var binding: FragmentNavPageBinding
+    private val homeFragment= NavHomeFragment()
+    private val profileFragment= NavProfileFragment()
+    private val statisticsFragment= NavStatisticsFragment()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentMainPageBinding.inflate(inflater, container, false)
+        binding = FragmentNavPageBinding.inflate(inflater, container, false)
 
 
         // Inflate the layout for this fragment
@@ -37,7 +35,7 @@ class MainPageFragment : Fragment() {
             true
         }
 
-        replaceFragment(profileFragment)
+        replaceFragment(homeFragment)
 
         return binding.root
 
