@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="way">
+        <item>Sedentary</item>
+    <item>Low</item>
+    <item>Moderate</item>
+    <item>Active</item>
+    <item>Athlete</item>
+
+    </array>
+</resources>

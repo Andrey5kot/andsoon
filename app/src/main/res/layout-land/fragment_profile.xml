@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainpages.buttonNavPages.NavProfileFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafffa">
+
+            <TextView
+                android:id="@+id/wayTitleTextView"
+                style="@style/MainTextStyle"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="@string/way_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/weightTitleTextView"
+                app:layout_constraintTop_toBottomOf="@+id/weightEditText" />
+
+            <TextView
+                android:id="@+id/AgeTitleTextView"
+                style="@style/MainTextStyle"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/age_title"
+                app:layout_constraintEnd_toEndOf="@+id/sexTitleTextView"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/sexTitleTextView"
+                app:layout_constraintTop_toBottomOf="@+id/sexRadioGroup" />
+
+            <EditText
+                android:id="@+id/ageEditText"
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="4dp"
+                android:ems="10"
+                android:hint="@string/age_hint"
+                android:inputType="number"
+                app:layout_constraintEnd_toEndOf="@+id/sexRadioGroup"
+                app:layout_constraintStart_toStartOf="@+id/sexRadioGroup"
+                app:layout_constraintTop_toBottomOf="@+id/AgeTitleTextView" />
+
+            <TextView
+                android:id="@+id/heightTitleTextView"
+                style="@style/MainTextStyle"
+                android:layout_width="74dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/height_title"
+                app:layout_constraintEnd_toEndOf="@+id/AgeTitleTextView"
+                app:layout_constraintHorizontal_bias="0.153"
+                app:layout_constraintStart_toStartOf="@+id/AgeTitleTextView"
+                app:layout_constraintTop_toBottomOf="@+id/ageEditText" />
+
+            <EditText
+                android:id="@+id/heightEditText"
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:ems="10"
+                android:hint="@string/height_title"
+                android:inputType="numberSigned"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="@+id/ageEditText"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="@+id/ageEditText"
+                app:layout_constraintTop_toBottomOf="@+id/heightTitleTextView" />
+
+            <TextView
+                android:id="@+id/weightTitleTextView"
+                style="@style/MainTextStyle"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/weight_title"
+                app:layout_constraintEnd_toEndOf="@+id/heightTitleTextView"
+                app:layout_constraintHorizontal_bias="0.158"
+                app:layout_constraintStart_toStartOf="@+id/heightTitleTextView"
+                app:layout_constraintTop_toBottomOf="@+id/heightEditText" />
+
+            <EditText
+                android:id="@+id/weightEditText"
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:ems="10"
+                android:hint="@string/weight_title"
+                android:inputType="numberSigned"
+                android:minHeight="48dp"
+                app:layout_constraintEnd_toEndOf="@+id/heightEditText"
+                app:layout_constraintStart_toStartOf="@+id/heightEditText"
+                app:layout_constraintTop_toBottomOf="@+id/weightTitleTextView" />
+
+            <TextView
+                android:id="@+id/profileTitleTextView"
+                style="@style/TitleStyle"
+                android:layout_width="106dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/profile_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.052"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/sexTitleTextView"
+                style="@style/MainTextStyle"
+                android:layout_width="69dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/gender_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profileTitleTextView" />
+
+            <RadioGroup
+                android:id="@+id/sexRadioGroup"
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="40dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sexTitleTextView">
+
+                <RadioButton
+                    android:id="@+id/checkMale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/male_title"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+                <RadioButton
+                    android:id="@+id/checkFemale"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/female_title"
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/button"
+                style="@style/SignButtonStyle"
+                android:layout_width="400dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginEnd="90dp"
+                android:layout_marginBottom="32dp"
+                android:text="@string/save_button"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="4dp"
+                android:entries="@array/way"
+                app:layout_constraintEnd_toEndOf="@+id/weightEditText"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/weightEditText"
+                app:layout_constraintTop_toBottomOf="@+id/wayTitleTextView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

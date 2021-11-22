@@ -9,8 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#fafffa"
-        >
+        android:background="#fafffa">
 
 
         <TextView
@@ -18,24 +17,22 @@
             style="@style/SignGreenStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="44dp"
             android:text="@string/Password_string"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.139"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/email_label"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/email_label"
             app:layout_constraintTop_toBottomOf="@+id/email_sign" />
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="197dp"
             android:layout_height="199dp"
-            android:layout_marginTop="4dp"
-            app:layout_constraintBottom_toTopOf="@+id/email_sign"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintVertical_bias="0.013"
             app:srcCompat="@drawable/dish" />
 
         <TextView
@@ -66,9 +63,11 @@
 
         <EditText
             android:id="@+id/email_sign"
-            android:layout_width="304dp"
+            android:layout_width="0dp"
             android:layout_height="53dp"
+            android:layout_marginStart="50dp"
             android:layout_marginTop="4dp"
+            android:layout_marginEnd="50dp"
             android:ems="10"
             android:hint="@string/email_hint"
             android:inputType="textEmailAddress"
@@ -78,22 +77,25 @@
 
         <EditText
             android:id="@+id/password_sign"
-            android:layout_width="304dp"
+            android:layout_width="0dp"
             android:layout_height="53dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="64dp"
             android:ems="10"
             android:hint="@string/password_hint"
             android:inputType="textPassword"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/password_label" />
+            app:layout_constraintEnd_toEndOf="@+id/email_sign"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/email_sign"
+            app:layout_constraintTop_toBottomOf="@+id/email_sign" />
 
         <Button
             android:id="@+id/sign_in_button"
             style="@style/SignButtonStyle"
-            android:layout_width="268dp"
+            android:layout_width="0dp"
             android:layout_height="58dp"
+            android:layout_marginStart="80dp"
             android:layout_marginTop="24dp"
+            android:layout_marginEnd="80dp"
             android:text="@string/SignIn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -119,11 +121,13 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="52dp"
             android:text="@string/forgot_label_text"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/sign_up_textbutton"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/google_label" />
+            app:layout_constraintTop_toBottomOf="@+id/google_label"
+            app:layout_constraintVertical_bias="0.0" />
 
         <Button
             android:id="@+id/sign_up_textbutton"
@@ -135,10 +139,12 @@
             android:text="@string/SignUp"
             android:textColor="#aedd94"
             android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/have_acc_label"
-            app:layout_constraintTop_toBottomOf="@+id/google_label" />
+            app:layout_constraintTop_toBottomOf="@+id/google_label"
+            app:layout_constraintVertical_bias="0.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
